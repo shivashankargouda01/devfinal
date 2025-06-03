@@ -9,6 +9,7 @@ RUN npm install
 RUN npm install -g vite
 
 COPY . .
+COPY .env .env
 
 EXPOSE 3000
 
