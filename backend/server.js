@@ -43,10 +43,11 @@ app.use(express.urlencoded({ extended: false }));
 // Enable CORS
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://yourdomain.com'] 
+    ? ['https://frontend-done.onrender.com']
     : ['http://localhost:3000', 'http://localhost:5173'],
   credentials: true
 }));
+
 
 // Routes
 app.use('/api/auth', require('./routes/auth'));
